@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body >         
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">Du Lịch</div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="index3.html">Đặt Vé</a></li>
+                    <li><a href="index2.html">Đăng Ký</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container1">
+            <img src="img/ban1.png" alt="" id="anh">
+            <div id="bt">
+                <input type="button"  value="<" onclick="next()">
+                
+            </div>
+            <div id="bt1">
+                <input type="button" value=">" onclick="pre()">
+            </div>
+        </div>
+        <script>
+            var mang_anh = [ "img/ban1.png","img/ban2.webp","img/ban3.jpg"];
+            var img = document.getElementById("anh");
+          
+            vitri = 0;
+            function next() {
+                vitri++;
+                if (vitri > 2) {
+                    vitri = 0;
+                }
+                console.log(vitri);
+                img.src = mang_anh[vitri];
+            }
+            function pre() {
+                vitri--;
+                if (vitri < 0) {
+                    vitri = mang_anh.length - 1;
+                }
+                console.log(vitri);
+                img.src = mang_anh[vitri];
+            }
+        </script>
+
+        <div class="content">
+
+            <!-- Info -->
+            <div id="info" class="info">
+                <h1 class="info-header">Giới Thiệu</h1>
+                <div class="info-content">
+                    <div class="text">
+                        <p>Chào mừng đến với trang web bán vé máy bay của chúng tôi! Chúng tôi cung cấp dịch vụ đặt vé máy bay trực tuyến với đầy đủ các hãng hàng không lớn và nhỏ trên khắp thế giới. Với hệ thống tìm kiếm thông minh, bạn có thể dễ dàng tìm kiếm các chuyến bay phù hợp với nhu cầu của mình và đặt vé chỉ trong vài phút. Chúng tôi cũng cung cấp các ưu đãi và khuyến mãi hấp dẫn cho các hành trình khác nhau, giúp bạn tiết kiệm chi phí và có trải nghiệm du lịch tuyệt vời hơn. Với đội ngũ nhân viên hỗ trợ khách hàng chuyên nghiệp và nhiệt tình, chúng tôi cam kết mang đến cho bạn dịch vụ đặt vé tốt nhất. Ngoài ra, trang web của chúng tôi còn cung cấp các công cụ hữu ích giúp bạn theo dõi và quản lý các chuyến bay của mình, bao gồm cập nhật lịch trình, thông tin về sân bay và thời gian bay. Bạn cũng có thể tìm kiếm và đặt phòng khách sạn hoặc dịch vụ đưa đón sân bay để có một kỳ nghỉ hoàn hảo. Hãy truy cập trang web của chúng tôi để đặt vé và khám phá thế giới ngay hôm nay!</p>
+                    </div>
+                    <div class="img" style="position: relative;">
+                        <img src="./img/sale1.png" alt="Sale">
+                        <p style="position: absolute; top:50%; left: 50%;">hai</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tickets -->
+            <
+            <!-- Contact -->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__info">
+                    <p class="footer-name">THÔNG TIN LIÊN HỆ</p>
+                    <div class="footer-info">
+                        <div href="#" class="info-link">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <p class="info-text">Địa chỉ: Quốc Oai - Hà Nội</p>
+                        </div>
+                        <div href="#" class="info-link">
+                            <i class="fa-solid fa-phone info-icon"></i>
+                            <p class="info-text">Điện thoại: <a href="tell: +00 0123456789">0123456789</a></p>
+                        </div>
+                        <div href="#" class="info-link">
+                            <i class="fa-solid fa-envelope info-icon"></i>
+                            <p class="info-text">Email: <a href="mailto:namntph36893@1212113.com">namntph36893@1212113.com</a></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer__list">
+                    <p class="footer-name">DANH MỤC CHÍNH</p>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="#!">Giới thiệu</a></li>
+                        <li class="footer-list-item"><a href="#!">Tin tức & Sự kiện</a></li>
+                        <li class="footer-list-item"><a href="#!">Hình ảnh hoạt động</a></li>
+                        <li class="footer-list-item"><a href="#!">Video</a></li>
+                        <li class="footer-list-item"><a href="#!">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </footer>        
+        </div>
+
+    </div>
+  
+</body>
+</html> 

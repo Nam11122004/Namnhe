@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Du Lịch</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="index3.html">Đặt Vé</a></li>
+                <li><a href="index2.html">Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Thanh Toán (<span
+                        class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Huỷ Thanh Toán</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">TP Hồ Chí Minh</h4>
+                        <p class="card-text">Giá: 900.000 VND</p>
+                        <a href="#" data-name="TPHồChíMinh" data-price="900.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Hà NộI</h4>
+                        <p class="card-text">Giá: 800.000 VND</p>
+                        <a href="#" data-name="HàNộI" data-price="800.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh3.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Vĩnh Long</h4>
+                        <p class="card-text">Giá: 700.000 VND</p>
+                        <a href="#" data-name="VĩnhLong" data-price="700.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh4.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Thanh Hoá</h4>
+                        <p class="card-text">Giá: 600.000 VND</p>
+                        <a href="#" data-name="ThanhHoá" data-price="600.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh5.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Nghệ An</h4>
+                        <p class="card-text">Giá: 1.000.000 VND</p>
+                        <a href="#" data-name="NghệAn" data-price="1.000.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/anh6.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Hà Tĩnh</h4>
+                        <p class="card-text">Giá: 1.200.000 VND</p>
+                        <a href="#" data-name="HàTxĩnh" data-price="1.200.000" class="add-to-cart btn btn-primary">Đặt Vé</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đặt Vé</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Tổng Tiền: <span class="total-cart"></span> VND</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                    <button type="button" class="btn btn-primary" onclick="thanhtoan()" data-dismiss="modal">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+        <script>
+              function thanhtoan(){
+                alert('Thanh toán thành công');
+                 }
+        </script>
+    </div>
+    <footer class="footer">
+        <div class="footer__info">
+            <p class="footer-name">THÔNG TIN LIÊN HỆ</p>
+            <div class="footer-info">
+                <div href="#" class="info-link">
+                    <i class="fa-solid fa-location-dot info-icon"></i>
+                    <p class="info-text">Địa chỉ: Quốc Oai - Hà Nội</p>
+                </div>
+                <div href="#" class="info-link">
+                    <i class="fa-solid fa-phone info-icon"></i>
+                    <p class="info-text">Điện thoại: <a href="tell: +00 0123456789">0123456789</a></p>
+                </div>
+                <div href="#" class="info-link">
+                    <i class="fa-solid fa-envelope info-icon"></i>
+                    <p class="info-text">Email: <a href="mailto:namntph36893@1212113.com">namntph36893@1212113.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer__list">
+            <p class="footer-name">DANH MỤC CHÍNH</p>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#!">Giới thiệu</a></li>
+                <li class="footer-list-item"><a href="#!">Tin tức & Sự kiện</a></li>
+                <li class="footer-list-item"><a href="#!">Hình ảnh hoạt động</a></li>
+                <li class="footer-list-item"><a href="#!">Video</a></li>
+                <li class="footer-list-item"><a href="#!">Liên hệ</a></li>
+            </ul>
+        </div>
+    </footer>  
+</div>
+    <script src="main2.js"></script>
+</body>
+
+</html>

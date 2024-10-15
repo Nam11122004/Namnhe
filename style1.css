@@ -1,0 +1,90 @@
+  .show-cart li {
+    display: flex;
+
+  }
+  .card {
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .header {
+    height: 60px;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.dulich {
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+.footer {
+    height: auto;
+    background-color: #f8f6f6;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ececec;
+    box-shadow: 0 0 1px #c6c6c6;
+}
+
+
+.footer__list,
+.footer__info {
+    margin: 20px 0 20px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(24, 24, 24);
+}
+
+.footer-name {
+    letter-spacing: 1px;
+}
+
+.footer-list a {
+    font-weight: 400;
+    color: #888887;
+    text-decoration: none;
+}
+
+li.footer-list-item {
+    margin: 20px 0;
+}
+
+ul.footer-list {
+    color: #888887;
+}
+
+/* Tickets */

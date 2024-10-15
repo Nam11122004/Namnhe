@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.container2
+.header {
+    height: 60px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.dulich {
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+
+
+
+.banner {
+    position: relative;
+    margin-top: 60px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+}
+
+.next {
+    right: 0;
+    margin-right: 20px;
+}
+
+.prev {
+    left: 0;
+    margin-left: 20px;
+}
+
+.contact,
+.info {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.tickets-header,
+.contact-header,
+.info-header {
+    padding-top: 20px;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-content>* {
+    width: 44%;
+}
+
+.info-content img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+.info-content .text {
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 40px;
+    color: rgb(24, 24, 24);
+}
+
+.tickets {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #ffefef;
+}
+
+.contact__input {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact__input input {
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.contact__input p {
+    color: rgb(24, 24, 24);
+    margin: 0 0 14px 0;
+    font-size: 26px;
+}
+
+.contact__button {
+    text-align: right;
+    margin-right: 172px;
+}
+
+.contact__button input {
+    padding: 12px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact__button input:hover {
+    background-color: #fdefef;
+}
+
+.info-link {
+    margin: 20px 0;
+    display: flex;
+}
+
+.info-link a {
+    color: #1b09f0;
+    opacity: 0.8;
+}
+
+.info-link a:hover {
+    opacity: 1;
+}
+
+.info-link:first-child p {
+    margin-left: 14px;
+}
+
+.info-link p {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.footer {
+    height: auto;
+    background-color: #f8f6f6;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ececec;
+    box-shadow: 0 0 1px #c6c6c6;
+}
+
+
+.footer__list,
+.footer__info {
+    margin: 20px 0 20px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(24, 24, 24);
+}
+
+.footer-name {
+    letter-spacing: 1px;
+}
+
+.footer-list a {
+    font-weight: 400;
+    color: #888887;
+    text-decoration: none;
+}
+
+li.footer-list-item {
+    margin: 20px 0;
+}
+
+ul.footer-list {
+    color: #888887;
+}
+
+/* Tickets */
+
+.tickets-form p {
+    margin-bottom: 8px;
+    color: rgb(24, 24, 24);
+}
+
+.tickets-content .box p:last-of-type {
+    margin: 20px 0 8px;
+}
+
+
+.tickets-form {
+    position: relative;
+    width: 1340px;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tickets-form .box {
+    width: 30%;
+    text-align: left;
+}
+
+.box input {
+    width: 80%;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-style: italic;
+    color: #757575;
+    box-shadow: 0 0 1px #ccc;
+}
+
+
+.tickets-form .box2 {
+    width: 15%;
+    margin-left: -80px;
+}
+
+.box3 input,
+.box2 input {
+    width: 100%;
+}
+
+.tickets-form .box3 {
+    width: 15%;
+}
+
+.tickets-form .box4 {
+    width: 10%;
+}
+
+.box4 input {
+    width: 50%;
+}
+
+select {
+    padding: 7.48px;
+    background-color: #ffdea5;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px #ccc;
+}
+
+.btn-search {
+    position: absolute;
+    right: 110px;
+    bottom: 34px;
+    padding: 10px 34px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    background-color: #ffdea5;
+}
+
+.row-item {
+    width: 1145px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-item:first-child {
+    margin-bottom: 50px;
+}
+
+.item {
+    width: 23%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px #ccc;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item img:hover {
+    opacity: 0.9;
+}
+
+h3 {
+    margin: 8px 0;
+    text-align: left;
+    line-height: 1.4;
+    color: rgb(24, 24, 24);
+}
+
+.item-text {
+    padding: 10px 12px;
+}
+
+.date {
+    text-align: left;
+    color: #7c7c7c;
+}
+
+.price {
+    color: #f44336;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+
+.btn-buy {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto 20px;
+    background-color: #0d305c;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    opacity: 0.9;
+    border: none;
+}
+
+.btn-buy:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Index2 */
+.content2 {
+    width: 100%;
+    background-color: #f4f7fbef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.form-register2 {
+    width: 80%;
+    min-height: 90%;
+    background-color: white;
+}
+
+.form-register2 h2 {
+    text-align: center;
+}
+
+.o-input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 55px;
+    display: block;
+    border: 1px solid #e1e1e1;
+    box-shadow: none;
+    text-indent: 0;
+    margin: 20px 0 10px 0;
+    outline-color: #3b96ff;
+}
+
+.form-login {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;    
+    padding: 40px 30px;
+}
+
+.row-input{
+    position: relative;
+}
+.row-input i {
+    position: absolute;
+    top: 20.6px;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+img {
+width: 100%;
+height: 600px;
+}
+
+
+.form-login-btn {
+    height: 50px;
+    line-height: 50px;
+    background: #fb7604;
+    border: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    border-radius: 6px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.form-login-btn:hover {
+    cursor: pointer;
+    background-color: #3b96ff;
+}
+#container1 {
+    position: relative;
+    /* border: 1px solid;*/
+    }
+    
+    #bt {
+    position: absolute;
+    bottom: 260px;
+    text-align: center;
+    }
+    #bt input{
+        padding: 10px;
+        background: scroll;
+        font-size: large;
+    }
+    #bt input[type="button"] {
+        margin-left: 25px;
+        display: block;
+        font-size: 50px;
+        border: none;
+      }
+    #bt1{
+        position: absolute;
+        bottom:260px; 
+        left: 1800px;
+    }
+    #bt1 input{
+        padding: 10px;
+        background: scroll;
+        font-size: large;
+    }
+    #bt1 input[type="button"] {
+        margin-left: 35px;
+        display: block;
+        font-size: 50px;
+        border: none;
+      }
+    
